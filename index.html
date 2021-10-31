@@ -5,22 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Beginner Programmer Quiz</title>
     <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
   </head>
   <body>
+    <!-- Top Section -->
     <div class="container min-vw-100">
-      <header class="row py-5 bg-secondary">
-        <p class="high-score col-3 text-light rounded text-center">View High Scores</p>
-        <div class="col-6">
-          <p class="text-light text-center">Code Quiz </p>
-        </div>
+      <header class="row py-5 justify-content-between">
+        <p class="high-score col-3 text-center">View High Scores</p>
 
-        <p class="stop-watch col-3 text-light rounded text-center">Time <span class="clock"></span></p>
+        <p class="stop-watch col-3 text-center">Time: <span class="clock"></span></p>
       </header>
-      
-      <main>
+      <!-- Middle Section with 'WRONG ADD-ON' -->
+      <main class="container">
+
+          <div class="quiz-front text-center">
+            <h2>Code Quiz!</h2>
+            <p>This is the hardest challenge you will ever face.</p>
+            <button class="start text-light">
+              Start
+            </button>
+          </div>
+          <div class="quiz-body bg-light rounded m-3 p-3 mb-auto">
+            <div class="quiz-q text-left">
+              <h2 class="question p-5">loreloreofawevjvl asdjfad dasfj ad s dafjadkasf adkfa;f</h2>
+            </div>
+            <div class="quiz-choice text-light">
+              <ul class=" text-light text-left">
+                <li class="p-2">
+                  <button class="purple text-light rounded" type="select" id="answer-a">
+                     A. <span class="a-text"></span>
+                  </button>
+                </li>
+                
+                <li class="p-2">
+                  <button class="text-light rounded" type="select" id="answer-b">
+                    B. <span class="a-text"></span>
+                  </button>
+                </li>
+
+                <li class="p-2">
+                  <button class="text-light rounded" type="select" id="answer-c">
+                    C. <span class="c-text"></span>
+                  </button>
+                </li>
+
+                <li class="p-2">
+                  <button class="text-light rounded" type="select" id="answer-d">
+                    D. <span class="d-text"></span>
+                  </button>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="quiz-submit">
+              <button class="final-answer w-100 text-light my-5">Submit</button>
+
+              <div class="quiz-accuracy vw-80 text-center">
+                
+              </div>
+            </div>
+          </div>
+
       </main>
       
       </div>

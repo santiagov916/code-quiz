@@ -1,0 +1,45 @@
+body {
+    font-family: 'Zen Atique', serif;
+}
+.high-score {
+    color: #ac7cbe;
+}
+.high-score:hover {
+    color: #8944a3;
+    font-weight: bold;
+}
+button {
+    background-color: #8944a3;
+    outline: none;
+    border: 0;
+}
+button:hover {
+    background-color: #ac7cbe;
+    font-weight: bold;
+}
+.final-answer {
+    background-color: #ac7cbe;
+    outline: none;
+    border: 0;
+    border-radius: 50px;    
+}
+.final-answer:hover {
+    background-color: #8944a3;
+    font-weight: bold;
+}
+.quiz-accuracy {
+    border-top: grey;
+}
+.question {
+    font-weight: bold;
+    font-size: 2rem;
+}
+.quiz-body {
+    display: none;
+}
+.start {
+    border-radius: 50px;
+    margin: 3px;
+    padding: 4px;
+    width: 200px;
+}
