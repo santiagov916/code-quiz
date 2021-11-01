@@ -17,6 +17,11 @@ button:hover {
     background-color: #ac7cbe;
     font-weight: bold;
 }
+button:focus {
+    background-color: #ac7cbe;
+    font-weight: bold;
+    outline: none;
+}
 #final-answer {
     background-color: #8944a3;
     outline: none;
@@ -26,6 +31,9 @@ button:hover {
 #final-answer:hover {
     background-color: #ac7cbe;
     font-weight: bold;
+}
+.quiz-choice button {
+    outline: none;
 }
 .quiz-accuracy {
     border-top: grey;

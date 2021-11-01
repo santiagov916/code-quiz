@@ -50,9 +50,10 @@ const quizQ = [
 ];
 
 const start = document.getElementsByClassName('start')
-const answerChoice = document.querySelectorAll('answer')
+const answerChoice = document.querySelectorAll('#answer')
 const quizFront = document.getElementById('quiz-front')
-const question = document.getElementById('quiz-frame')
+const questionBody = document.getElementById('quiz-frame')
+const questionText = document.getElementsByClassName("question")
 const aText = document.getElementsByClassName('a-text')
 const bText = document.getElementsByClassName('b-text')
 const cText = document.getElementsByClassName('c-text')
@@ -60,34 +61,53 @@ const dText = document.getElementsByClassName('d-text')
 const submit = document.getElementById('final-answer')
 const clock = document.getElementsByClassName('clock')
 
-
 let currentQuiz = 0
 let score = 0
 
 
 $(start).on('click', function() {
-   var currentTime = 3;
+
+
+   var currentTime = 60;
    $(clock).text(currentTime);
     $(clock).removeClass("show");
     $(quizFront).addClass("show");
-    $(question).removeClass("show");
+    $(questionBody).removeClass("show");
     $('.stop-watch').removeClass("show");
     $(clock).addClass("text-large");
     
-    
+        // code for the timer
         var minus = parseInt(currentTime - 1);
 
         var countDown = setInterval(function() {
-            console.dir(minus);
             $(clock).text(minus);
             if(minus === 0) {
             clearInterval(countDown);
             } else {
                 minus--
-            }
-        }, 1000);
-        
-    }
+            }}, 1000);
 
-    
-    );
+        // code for the quiz question and array 
+        quizRun()
+
+        function quizRun() {
+            
+            const currentQuizSrc = quizQ[currentQuiz]
+            
+            // uncheckChoices()
+
+            $(questionText).html(currentQuizSrc.question);
+            $(aText).html(currentQuizSrc.a);
+            $(bText).html(currentQuizSrc.b);
+            $(cText).html(currentQuizSrc.c);
+            $(dText).html(currentQuizSrc.d);
+
+        }
+        
+        $(submit).on('click', function() {
+            currentQuiz++
+            quizRun();
+                });
+
+    });
+
