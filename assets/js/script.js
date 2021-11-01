@@ -58,14 +58,36 @@ const bText = document.getElementsByClassName('b-text')
 const cText = document.getElementsByClassName('c-text')
 const dText = document.getElementsByClassName('d-text')
 const submit = document.getElementById('final-answer')
+const clock = document.getElementsByClassName('clock')
+
 
 let currentQuiz = 0
 let score = 0
 
 
-    $(start).on('click', function() {
-        console.log("yes");
-        $(question).removeClass("quiz-body");
-        $(quizFront).addClass("quiz-body");
+$(start).on('click', function() {
+   var currentTime = 3;
+   $(clock).text(currentTime);
+    $(clock).removeClass("show");
+    $(quizFront).addClass("show");
+    $(question).removeClass("show");
+    $('.stop-watch').removeClass("show");
+    $(clock).addClass("text-large");
+    
+    
+        var minus = parseInt(currentTime - 1);
+
+        var countDown = setInterval(function() {
+            console.dir(minus);
+            $(clock).text(minus);
+            if(minus === 0) {
+            clearInterval(countDown);
+            } else {
+                minus--
+            }
+        }, 1000);
         
-    });
+    }
+
+    
+    );

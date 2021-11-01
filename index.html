@@ -18,18 +18,18 @@
       <header class="row py-5 justify-content-between">
         <p class="high-score col-3 text-center">View High Scores</p>
 
-        <p class="stop-watch col-3 text-center">Time: <span class="clock"></span></p>
+        <p class="stop-watch col-3 text-center show">Timer: <span class="clock show"></span></p>
       </header>
       <!-- Middle Section with 'WRONG ADD-ON' -->
       <main class="container">
-          <div id="quiz-front" class="text-center mb-auto">
+          <div id="quiz-front" class=" text-center mb-auto">
             <h2>Code Quiz!</h2>
             <p>This is the hardest challenge you will ever face.</p>
             <button class="start text-light">
               Start
             </button>
           </div>
-          <div id="quiz-frame" class="quiz-body bg-light rounded m-3 p-3 mb-auto">
+          <div id="quiz-frame" class="quiz-body show bg-light rounded m-3 p-3 mb-auto">
             <div class="quiz-header text-left">
               <h2 class="question p-5">Question Text</h2>
             </div>
@@ -62,7 +62,7 @@
               </ul>
             </div>
             <div class="quiz-submit">
-              <button id="final-answer w-100 text-light my-5">Submit</button>
+              <button id="final-answer" class="w-100 text-light my-5" type="submit">Submit</button>
 
               <div class="quiz-accuracy vw-80 text-center">
                 
