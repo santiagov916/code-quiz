@@ -2,11 +2,18 @@ body {
     font-family: 'Zen Atique', serif;
 }
 .high-score {
+    background-color: #fff;
     color: #ac7cbe;
 }
 .high-score:hover {
     color: #8944a3;
     font-weight: bold;
+    background-color: #fff;
+}
+.high-score:focus {
+    background-color: #fff;
+    cursor: pointer;
+    color: #8944a3;
 }
 button {
     background-color: #8944a3;
@@ -53,4 +60,14 @@ button:focus {
 }
 .text-large {
     font-size: 1.2rem;
+}
+.card {
+    border: none;
+}
+.card-header {
+    border: none;
+    font-size: 2rem;
+}
+.leaderboard {
+    background-color: #ac7cbe;
 }
