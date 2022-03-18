@@ -1,3 +1,4 @@
+
 const quizQ = [
     {
         question: "Commmonly used database types DO NOT include:",
