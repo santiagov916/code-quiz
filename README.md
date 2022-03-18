@@ -1,21 +1,45 @@
-// README file
+  # Code Quiz
 
-USER STORY
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
+  ## Table of Content
+  
+  * [Description](#description)
+  
+  * [Motivation](#motivation)
+  
+  * [Usage](#usage)
+  
+  * [Installation](#Installation)
+  
+  * [Contributors and more](#contributors)
+  
+  * [Questions](#questions)
 
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+  ## Description
 
-USER CRITERIA 
+  this a quick demonstration quiz of basic usage of html, css, and javascript, test yourself on some quick questions about coding! 
+  
+  ## Motivation
 
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+  I am learning how to code and what better way to do it than to code?! 
+
+  ## Usage
+
+  localhost
+
+  ## Installation 
+
+  ### Dependencies: none, completely front end
+  ### To install: npm i OR npm install
+  ### CLI to start: N/A
+
+  ## Contributors
+
+  ### People: myself and classmates
+  ### GitHub username + link: [santiagov916](github.com/santiagov916)
+  ### GitHub Link to project: https://github.com/santiagov916/code-quiz
+
+  ## Questions?
+
+  ### Email the programmer: santiago1venegas@gmail.com
