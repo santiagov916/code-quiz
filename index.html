@@ -16,46 +16,45 @@
     <!-- Top Section -->
     <div class="container min-vw-100">
       <header class="row py-5 justify-content-between">
-        <p class="high-score col-3 text-center">View High Scores</p>
+        <button class="high-score col-3 text-center">View High Scores</button>
 
-        <p class="stop-watch col-3 text-center">Time: <span class="clock"></span></p>
+        <p class="stop-watch col-3 text-center show">Timer: <span class="clock show"></span></p>
       </header>
       <!-- Middle Section with 'WRONG ADD-ON' -->
       <main class="container">
-
-          <div class="quiz-front text-center">
+          <div id="quiz-front" class=" text-center mb-auto">
             <h2>Code Quiz!</h2>
             <p>This is the hardest challenge you will ever face.</p>
             <button class="start text-light">
               Start
             </button>
           </div>
-          <div class="quiz-body bg-light rounded m-3 p-3 mb-auto">
-            <div class="quiz-q text-left">
-              <h2 class="question p-5">loreloreofawevjvl asdjfad dasfj ad s dafjadkasf adkfa;f</h2>
+          <div id="quiz-frame" class="quiz-body show bg-light rounded m-3 p-3 mb-auto">
+            <div class="quiz-header text-left">
+              <h2 class="question p-5"></h2>
             </div>
             <div class="quiz-choice text-light">
               <ul class=" text-light text-left">
                 <li class="p-2">
-                  <button class="purple text-light rounded" type="select" id="answer-a">
-                     A. <span class="a-text"></span>
+                  <button class="text-light rounded">
+                     A. <span id="answer" class="a-text" type="button"></span>
                   </button>
                 </li>
                 
                 <li class="p-2">
-                  <button class="text-light rounded" type="select" id="answer-b">
-                    B. <span class="a-text"></span>
+                  <button id="answer" class="text-light rounded" type="select">
+                    B. <span class="b-text"></span>
                   </button>
                 </li>
 
                 <li class="p-2">
-                  <button class="text-light rounded" type="select" id="answer-c">
+                  <button id="answer" class="text-light rounded" type="select">
                     C. <span class="c-text"></span>
                   </button>
                 </li>
 
                 <li class="p-2">
-                  <button class="text-light rounded" type="select" id="answer-d">
+                  <button id="answer" class="text-light rounded" type="select">
                     D. <span class="d-text"></span>
                   </button>
                 </li>
@@ -63,18 +62,32 @@
               </ul>
             </div>
             <div class="quiz-submit">
-              <button class="final-answer w-100 text-light my-5">Submit</button>
+              <button id="final-answer" class="w-100 text-light my-5" type="submit">Submit</button>
 
               <div class="quiz-accuracy vw-80 text-center">
                 
               </div>
             </div>
-          </div>
+            
+          </main>
+          <div class="card justify-content-center align-items-center show">
+            <div class="cardbody w-50">
+              <h3 class="card-header rounded text-center">High Scores:</h3>
+              <ul class="leaderboard">
 
-      </main>
+              </ul>
+              <div class="options text-center">
+                <button class="try-again rounded text-light text-large">
+                  Try Again
+                </button>
+              </div>
+
+            </div>
+         </div>
       
       </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html> 
